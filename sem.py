@@ -9,7 +9,6 @@ def military_joke(n: int) -> str:
     output = ''.join(text[n-1])
     if "\n" in output:
         output = output.replace('\n', '')
-    file.close()
     return output
 
 print(military_joke(3))
@@ -25,7 +24,6 @@ def corona_joke(n: int) -> str:
     output = ''.join(text[n-1])
     if "\n" in output:
         output = output.replace('\n', '')
-    file.close()
     return output
 
 def cats_joke(n: int) -> str:
@@ -39,7 +37,6 @@ def cats_joke(n: int) -> str:
     output = ''.join(text[n-1])
     if "\n" in output:
         output = output.replace('\n', '')
-    file.close()
     return output
 
 
