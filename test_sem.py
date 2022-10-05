@@ -7,7 +7,7 @@ import pytest
 tests1 = [(2, 'Озверин + Виагра. Месть кота Леопольда была ужасной.')]
 
 
-@pytest.mark.parametrize('n_inp, result', tests1)
+@pytest.mark.parametrize('n_inp, resultat', tests1)
 def testing_cats_joke(n_inp, resultat):
     """Тест анекдотов про кошек.
 
@@ -21,7 +21,7 @@ def testing_cats_joke(n_inp, resultat):
 tests2 = [(2, 'Карантин — это военные сборы диванных войск.')]
 
 
-@pytest.mark.parametrize('n_inp, result', tests2)
+@pytest.mark.parametrize('n_inp, resultat', tests2)
 def testing_corona_joke(n_inp, resultat):
     """Тест анекдотов про ковид.
 
@@ -35,7 +35,7 @@ def testing_corona_joke(n_inp, resultat):
 tests2 = [(2, 'Принять мужчину таким, какой он есть, может только военкомат.')]
 
 
-@pytest.mark.parametrize('n_inp, result', tests2)
+@pytest.mark.parametrize('n_inp, resultat', tests2)
 def testing_military_joke(n_inp, resultat):
     """Тест военных анекдотов.
 
