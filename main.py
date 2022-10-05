@@ -20,4 +20,12 @@ def main(number: int) -> str:
 
 
 if __name__ == '__main__':
-    print(type(m
+    while True:
+        inp = input('Input number from 1 to 3. To quit input Q: ')
+        if inp == 'Q':
+            break
+        try:
+            if 0 < int(inp) < 4:
+                print(main(int(inp)))
+        except ValueError:
+            print('ValueError')
