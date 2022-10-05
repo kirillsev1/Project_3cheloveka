@@ -20,17 +20,4 @@ def main(number: int) -> str:
 
 
 if __name__ == '__main__':
-    print(type(military_joke(1)))
-    while True:
-        try:
-            num = int(input('Input number from 1 to 3: '))
-        except ValueError:
-            print('Try again')
-        else:
-            if 1 <= num <= 3:
-                print(main(num))
-                print('\nTo quit input Q')
-                if input() == 'Q':
-                    break
-            else:
-                print('Try again')
+    print(type(m
