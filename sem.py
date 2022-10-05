@@ -2,11 +2,13 @@
 
 
 def military_joke(num: int) -> str:
-    """ This function return military joke.
-        Args:
-        num: int - joke number requested by the user.
-        Returns:
-        str: str - answer.
+
+    """This function return military joke.
+
+    Args:
+    num: int - joke number requested by the user.
+    Returns:
+    str: str - answer.
     """
     text = []
     anek = open('military_joke.txt', 'r')
@@ -18,13 +20,14 @@ def military_joke(num: int) -> str:
     anek.close()
     return output
 
-
 def corona_joke(num: int) -> str:
-    """ This function return coronavirus joke.
-        Args:
-        num: int - joke number requested by the user.
-        Returns:
-        str: str - answer.
+
+    """This function return coronavirus joke.
+
+    Args:
+    num: int - joke number requested by the user.
+    Returns:
+    str: str - answer.
     """
     text = []
     anek = open('corona_joke.txt', 'r')
@@ -36,13 +39,13 @@ def corona_joke(num: int) -> str:
     anek.close()
     return output
 
-
 def cats_joke(num: int) -> str:
-    """" This function return cats joke.
-        Args:
-        num: int - joke number requested by the user.
-        Returns:
-        str - answer.
+    """This function return cats joke.
+
+    Args:
+    num: int - joke number requested by the user.
+    Returns:
+    str - answer.
     """
     text = []
     anek = open('cats_joke.txt', 'r')
