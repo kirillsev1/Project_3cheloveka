@@ -12,7 +12,7 @@ def military_joke(n: int) -> str:
     file = open('military_joke.txt', 'r')
     for line in file.readlines():
         text.append(line)
-    output = ''.join(text[n-1])
+    output = ''.join(text[n - 1])
     if "\n" in output:
         output = output.replace('\n', '')
     file.close()
@@ -30,7 +30,7 @@ def corona_joke(n: int) -> str:
     file = open('corona_joke.txt', 'r')
     for line in file.readlines():
         text.append(line)
-    output = ''.join(text[n-1])
+    output = ''.join(text[n - 1])
     if "\n" in output:
         output = output.replace('\n', '')
     file.close()
@@ -48,7 +48,7 @@ def cats_joke(n: int) -> str:
     file = open('cats_joke.txt', 'r')
     for line in file.readlines():
         text.append(line)
-    output = ''.join(text[n-1])
+    output = ''.join(text[n - 1])
     if "\n" in output:
         output = output.replace('\n', '')
     file.close()
