@@ -1,55 +1,55 @@
 """File with extra functions."""
 
 
-def military_joke(n: int) -> str:
-    """This function return military joke.
-    Args:
-        n: int - joke number requested by the user.
-    Returns:
+def military_joke(num: int) -> str:
+    """ This function return military joke.
+        Args:
+        num: int - joke number requested by the user.
+        Returns:
         str: str - answer.
     """
     text = []
-    file = open('military_joke.txt', 'r')
-    for line in file.readlines():
+    anek = open('military_joke.txt', 'r')
+    for line in anek.readlines():
         text.append(line)
-    output = ''.join(text[n - 1])
+    output = ''.join(text[num - 1])
     if "\n" in output:
         output = output.replace('\n', '')
-    file.close()
+    anek.close()
     return output
 
 
-def corona_joke(n: int) -> str:
-    """"This function return coronavirus joke.
-    Args:
-        n: int - joke number requested by the user.
-    Returns:
+def corona_joke(num: int) -> str:
+    """ This function return coronavirus joke.
+        Args:
+        num: int - joke number requested by the user.
+        Returns:
         str: str - answer.
     """
     text = []
-    file = open('corona_joke.txt', 'r')
-    for line in file.readlines():
+    anek = open('corona_joke.txt', 'r')
+    for line in anek.readlines():
         text.append(line)
-    output = ''.join(text[n - 1])
+    output = ''.join(text[num - 1])
     if "\n" in output:
         output = output.replace('\n', '')
-    file.close()
+    anek.close()
     return output
 
 
-def cats_joke(n: int) -> str:
-    """"This function return cats joke.
-    Args:
-        n: int - joke number requested by the user.
-    Returns:
+def cats_joke(num: int) -> str:
+    """" This function return cats joke.
+        Args:
+        num: int - joke number requested by the user.
+        Returns:
         str - answer.
     """
     text = []
-    file = open('cats_joke.txt', 'r')
-    for line in file.readlines():
+    anek = open('cats_joke.txt', 'r')
+    for line in anek.readlines():
         text.append(line)
-    output = ''.join(text[n - 1])
+    output = ''.join(text[num - 1])
     if "\n" in output:
         output = output.replace('\n', '')
-    file.close()
+    anek.close()
     return output
