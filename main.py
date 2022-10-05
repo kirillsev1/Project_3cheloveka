@@ -20,18 +20,12 @@ def main(number: int) -> str:
 
 
 if __name__ == '__main__':
-    print(type(military_joke(1)))
     while True:
-        num = 0
-        inp = input('Input number from 1 to 3. To quit input Q ')
+        inp = input('Input number from 1 to 3. To quit input Q: ')
         if inp == 'Q':
             break
         try:
-            num = int(inp)
+            if 0 < int(inp) < 4:
+                print(main(int(inp)))
         except ValueError:
-            print('Try again')
-        if num:
-            if 0 < num < 4:
-                print(main(num))
-            else:
-                print('Try again')
+            print('ValueError')
