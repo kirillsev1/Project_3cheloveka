@@ -18,6 +18,7 @@ def military_joke(n: int) -> str:
     file.close()
     return output
 
+
 def corona_joke(n: int) -> str:
     """"This function return coronavirus joke.
     Args:
