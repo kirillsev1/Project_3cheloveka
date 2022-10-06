@@ -27,5 +27,7 @@ if __name__ == '__main__':
         try:
             if 0 < int(inp) < 4:
                 print(main(int(inp)))
+            else:
+                print('Try again')
         except ValueError:
             print('ValueError')
