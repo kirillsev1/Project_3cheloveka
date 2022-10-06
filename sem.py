@@ -11,11 +11,13 @@ def military_joke(num: int) -> str:
         str: str - answer.
     """
     with open('military_joke.txt', 'r') as anek:
-        text = [line for line in anek]
-        output = ''.join(text[num - 1])
-        if "\n" in output:
-            output = output.replace('\n', '')
-        return output
+        text = []
+        for line in anek:
+            text.append(line)
+    output = ''.join(text[num - 1])
+    if "\n" in output:
+        output = output.replace('\n', '')
+    return output
 
 
 def corona_joke(num: int) -> str:
@@ -27,12 +29,14 @@ def corona_joke(num: int) -> str:
     Returns:
         str: str - answer.
     """
+    text = []
     with open('corona_joke.txt', 'r') as anek:
-        text = [line for line in anek]
-        output = ''.join(text[num - 1])
-        if "\n" in output:
-            output = output.replace('\n', '')
-        return output
+        for line in anek:
+            text.append(line)
+    output = ''.join(text[num - 1])
+    if "\n" in output:
+        output = output.replace('\n', '')
+    return output
 
 
 def cats_joke(num: int) -> str:
@@ -44,9 +48,11 @@ def cats_joke(num: int) -> str:
     Returns:
         str - answer.
     """
+    text = []
     with open('cats_joke.txt', 'r') as anek:
-        text = [line for line in anek]
-        output = ''.join(text[num - 1])
-        if "\n" in output:
+        for line in anek:
+            text.append(line)
+    output = ''.join(text[num - 1])
+    if "\n" in output:
             output = output.replace('\n', '')
-        return output
+    return output
