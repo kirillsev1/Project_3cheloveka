@@ -3,10 +3,8 @@
 
 def military_joke(num: int) -> str:
     """This function return military joke.
-    
     Args:
     num: int - joke number requested by the user.
-    
     Returns:
     str: str - answer.
     """
@@ -20,10 +18,8 @@ def military_joke(num: int) -> str:
 
 def corona_joke(num: int) -> str:
     """This function return coronavirus joke.
-    
     Args:
     num: int - joke number requested by the user.
-    
     Returns:
     str: str - answer.
     """
@@ -37,10 +33,8 @@ def corona_joke(num: int) -> str:
 
 def cats_joke(num: int) -> str:
     """This function return cats joke.
-    
     Args:
     num: int - joke number requested by the user.
-    
     Returns:
     str - answer.
     """
