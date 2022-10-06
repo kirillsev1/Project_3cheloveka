@@ -54,5 +54,5 @@ def cats_joke(num: int) -> str:
             text.append(line)
     output = ''.join(text[num - 1])
     if "\n" in output:
-            output = output.replace('\n', '')
+        output = output.replace('\n', '')
     return output
