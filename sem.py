@@ -39,6 +39,7 @@ def corona_joke(num: int) -> str:
     return output
 
 
+
 def cats_joke(num: int) -> str:
     """This function return cats joke.
 
