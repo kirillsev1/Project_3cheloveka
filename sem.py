@@ -13,7 +13,6 @@ def military_joke(num: int) -> str:
     output = ''.join(text[num - 1])
     if "\n" in output:
         output = output.replace('\n', '')
-    anek.close()
     return output
 
 
