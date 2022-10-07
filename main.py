@@ -11,12 +11,20 @@ def main(number: int) -> str:
     Returns:
          str - answer.
     """
-    if number == 1:
-        return military_joke(number)
-    elif number == 2:
-        return cats_joke(number)
-    elif number == 3:
-        return corona_joke(number)
+    try:
+        out = int(input('Введите номер анекдота: '))
+    except ValueError:
+        return 'ValueError'
+    with open('military_joke.txt', 'r') as fir:
+        if number == 1 and 1 <= out <= len(fir.readlines()):
+            return military_joke(out)
+    with open('corona_joke.txt', 'r') as sec:
+        if number == 2 and 1 <= out <= len(sec.readlines()):
+            return cats_joke(out)
+    with open('cats.txt', 'r') as thi:
+        if number == 3 and 1 <= out <= len(thi.readlines()):
+            return corona_joke(out)
+    return 'Try again'
 
 
 if __name__ == '__main__':
