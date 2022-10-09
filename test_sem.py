@@ -4,10 +4,10 @@ from sem import corona_joke
 from sem import military_joke
 import pytest
 
-with open ('cats.txt', 'r') as file:
+with open('cats.txt', 'r')as file1:
     tests = []
     index = 0
-    for line in file:
+    for line in file1:
         index += 1
         tests.append((index, line[:-1:]))
     tests.pop()
@@ -23,10 +23,10 @@ with open ('cats.txt', 'r') as file:
         assert cats_joke(n_inp) == resultat
 
 
-with open ('corona_joke.txt', 'r') as file:
+with open('corona_joke.txt', 'r')as file2:
     tests = []
     index = 0
-    for line in file:
+    for line in file2:
         index += 1
         tests.append((index, line[:-1:]))
     tests.pop()
@@ -43,10 +43,10 @@ def testing_corona_joke(n_inp, resultat):
     assert corona_joke(n_inp) == resultat
 
 
-with open ('military_joke.txt', 'r') as file:
+with open('military_joke.txt', 'r')as file3:
     tests = []
     index = 0
-    for line in file:
+    for line in file3:
         index += 1
         tests.append((index, line[:-1:]))
     tests.pop()
