@@ -54,7 +54,7 @@ if __name__ == '__main__':
     files = ['military_joke', 'corona_joke', 'cats_joke', 'Input number from 1 to 3. To quit input q:']
     while True:
         inp = input('1 - {0}\n2 - {1}\n3 - {2}\n{3} \n'.format(files[0], files[1], files[2], files[3]))
-        if inp == 'Q':
+        if inp == 'q':
             break
         try:
             if 0 < int(inp) < 4:
