@@ -45,7 +45,7 @@ def main(number: int) -> str:
         if number == 2 and 1 <= out <= length:
             return cats_joke(out)
     with open('cats.txt', 'r'):
-        if number == 3 and 1 <= out < length:
+        if number == 3 and 1 <= out <= length:
             return corona_joke(out)
     return 'Try again'
 
